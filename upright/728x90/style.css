@@ -1,0 +1,105 @@
+:root {
+  --banner-width: 728px;
+  --banner-height: 90px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--banner-width);
+  height: var(--banner-height);
+}
+
+
+/* FRAMES */
+.frame1 {
+  z-index: 10;
+}
+
+.frame2 {
+  z-index: 9;
+}
+
+.frame3 {
+  z-index: 8;
+}
+
+.frame4 {
+  z-index: 7;
+}
+
+.frame5 {
+  z-index: 6;
+}
+
+.svg-mask-wrapper {
+  position: absolute;
+  height: var(--banner-height);
+  z-index: 2;
+}
+
+.common {
+  z-index: 20;
+}
+
+/* .logo {
+  height: var(--banner-height);
+} */
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo,
+.frame-text,
+.frame-disc {
+  position: absolute;
+  top: 0;
+  height: var(--banner-height)
+}
+
+.frame-btn {
+  position: absolute;
+  top: 60px;
+  left: 415px;
+  width: 102px;
+  height: 21px;
+}
+
+.frame-wrapper {
+  width: var(--banner-width);
+  height: var(--banner-height);
+}
+
+#bg-exit {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+}
