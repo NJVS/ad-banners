@@ -1,0 +1,76 @@
+:root {
+  --banner-width: 728px;
+  --banner-height: 90px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#banner {
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--banner-width);
+  height: var(--banner-height);
+}
+
+.frame1 {
+  z-index: 10;
+}
+
+.frame2 {
+  z-index: 9;
+}
+
+.frame3 {
+  z-index: 8;
+}
+
+.frame4 {
+  z-index: 7;
+}
+
+.frame5 {
+  z-index: 6;
+}
+
+.common {
+  z-index: 20;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.frame-wrapper {
+  width: var(--banner-width);
+  height: var(--banner-height);
+}
+
+#bg-exit {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+}
