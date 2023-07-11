@@ -103,10 +103,10 @@ class Banner {
 
     this.mainTimeline
       .set('#banner', { autoAlpha: 0 })
-      .set('.logo', { x: 600, autoAlpha: 0 })
-      .set('.frame1-img', { x: 160 })
-      .set('.frame1-text1', { x: 50, autoAlpha: 0 })
-      .set('.frame1-text2', { x: 50, autoAlpha: 0 })
+      .set('.logo', { x: '82%', autoAlpha: 0 })
+      .set('.frame1-img', { x: '21.98%' })
+      .set('.frame1-text1', { x: '6.86%', autoAlpha: 0 })
+      .set('.frame1-text2', { x: '6.86%', autoAlpha: 0 })
       .set('.frame-btn', { scale: 0.5, autoAlpha: 0 })
       .set('.frame-disc', { autoAlpha: 0 })
       .to('#banner', { autoAlpha: 1, delay: 0.3 });
@@ -139,7 +139,7 @@ class Banner {
     const timeline = gsap.timeline();
 
     timeline
-      .to('.frame1 .gradient1', 1.5, { x: -620, ease: 'power3.out' })
+      .to('.frame1 .gradient1', 1.5, { x: '-77.3%', ease: 'power3.out' })
       .to('.logo', 1.5, { x: 0, autoAlpha: 1, ease: 'power3.out' }, '<')
       .to('.frame1 .frame1-img', 1.5, { x: 0, ease: 'power3.out' }, '<')
       .to('.frame1-text1', 1.5, { x: 0, autoAlpha: 1, ease: 'power3.out' }, '-=0.75')
@@ -151,7 +151,7 @@ class Banner {
     const timeline = gsap.timeline();
 
     timeline
-      .to('.frame1-text1', 0.4, { x: -50, autoAlpha: 0, ease: 'power3.out' })
+      .to('.frame1-text1', 0.4, { x: '-6.86%', autoAlpha: 0, ease: 'power3.out' })
       .to('.frame1-text2', 1.5, { x: 0, autoAlpha: 1, ease: 'power3.out' }, '<')
 
     return timeline;
@@ -161,7 +161,7 @@ class Banner {
     const timeline = gsap.timeline();
 
     timeline
-      .to('.frame1-text2', 0.4, { x: -50, autoAlpha: 0, ease: 'power3.out' })
+      .to('.frame1-text2', 0.4, { x: '-6.86%', autoAlpha: 0, ease: 'power3.out' })
       .to('.frame-btn', 0.5, { scale: 1, autoAlpha: 1, ease: 'power3.out' })
       .to('.frame-btn', 0.15, { scale: 1.1, ease: 'power1.out', repeat: 1, yoyo: true }, '>0.5')
       .to('.frame-disc', { autoAlpha: 1 }, '<0.5');
