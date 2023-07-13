@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="ad.size" content="width=300,height=250">
+  <meta http-equiv="Content=Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const clickTag = "https://github.com/NJVS";
+  </script>
+</head>
+
+<body>
+  <div id="banner" class="banner" style="display: none;">
+
+    <!-- FRAME1 -->
+    <div class="frame1 frame banner">
+      <div class="frame-wrapper">
+        <div class="frame-image frame1-background">
+          <img src="./assets/frame1-bg.jpg">
+        </div>
+        <div class="frame-image frame1-image1">
+          <img src="./assets/frame1-seal.png">
+        </div>
+        <div class="frame-text frame1-text1">
+          <img src="./assets/frame1-text1.svg">
+        </div>
+        <div class="frame-text frame1-text2">
+          <img src="./assets/frame1-text2.svg">
+        </div>
+        <div class="frame-text frame1-text3">
+          <img src="./assets/frame1-text3.svg">
+        </div>
+      </div>
+    </div>
+
+    <!-- FRAME2 -->
+    <div class="frame2 frame banner">
+      <div class="frame-wrapper">
+        <div class="frame-image orange-bg">
+          <img src="./assets/orangebg.jpg">
+        </div>
+        <div class="frame-image iq3">
+          <img src="./assets/iq3.png">
+        </div>
+        <div class="frame-text frame2-text1">
+          <img src="./assets/frame2-text1.svg">
+        </div>
+        <div class="frame-text frame2-text2">
+          <img src="./assets/frame2-text2.svg">
+        </div>
+        <div class="frame-text frame2-text3">
+          <img src="./assets/frame2-text3.svg">
+        </div>
+        <div class="frame-text frame3-text1">
+          <img src="./assets/frame3-text1.svg">
+        </div>
+        <div class="frame-text frame3-text2">
+          <img src="./assets/frame3-text2.svg">
+        </div>
+        <div class="frame-text frame3-text3">
+          <img src="./assets/frame3-text3.svg">
+        </div>
+        <div class="frame-text frame3-text4">
+          <img src="./assets/frame3-text4.svg">
+        </div>
+        <p>
+          Requires Sports HD subscription with iQ4 box, compatible 4K
+          <br>
+          TV and HDMI cable. Not available to all homes.
+        </p>
+      </div>
+    </div>
+
+    <!-- FRAME4 -->
+    <div class="frame4 frame banner">
+      <div class="frame-wrapper">
+        <div class="frame-image orange-bg">
+          <img src="./assets/orangebg.jpg">
+        </div>
+        <div class="frame-image logo">
+          <img src="./assets/logo.svg">
+        </div>
+        <div class="frame-text frame4-text1">
+          <img src="./assets/frame4-text1.svg">
+        </div>
+        <div class="frame-text frame4-text2">
+          <img src="./assets/frame4-text2.svg">
+        </div>
+        <div class="frame-text frame4-text3">
+          <img src="./assets/frame4-text3.svg">
+        </div>
+        <div class="frame-image frame4-btn">
+          <img src="./assets/frame4-btn.svg">
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMON -->
+    <!-- <div class="common frame banner">
+      <div class="frame-wrapper"> 
+        
+      </div>
+    </div> -->
+
+    <!-- EXIT (CLICK) -->
+    <div id="bg-exit" class="banner"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="./main.js"></script>
+
+  <script>
+    // exit
+    document.querySelector("#bg-exit").addEventListener('click', () => {
+      window.open(clickTag);
+    }, false)
+
+    const banner = new Banner();
+    banner.preloadImages();
+  </script>
+
+</body>
+
+</html>
